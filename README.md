@@ -5,11 +5,9 @@ Home: https://github.com/ropensci/oai
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-oai-feedstock/blob/master/LICENSE.txt)
 
 Summary: A general purpose client to work with any 'OAI-PMH' (Open Archives Initiative Protocol for 'Metadata' Harvesting) service. The 'OAI-PMH' protocol is described at <http://www.openarchives.org/OAI/openarchivesprotocol.html>. Functions are provided to work with the 'OAI-PMH' verbs: 'GetRecord', 'Identify', 'ListIdentifiers', 'ListMetadataFormats', 'ListRecords', and 'ListSets'.
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-oai` from the `conda-forge` channel can be achieved by adding `con
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-oai` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
