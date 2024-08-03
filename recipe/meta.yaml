@@ -1,6 +1,5 @@
 {% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-oai
@@ -13,8 +12,7 @@ source:
   sha256: f540de066de5538e303cd535cbd2e771b40474bc2c6e8d08a4894a868543ee33
 
 build:
-  merge_build_host: true  # [win]
-  number: 1
+  number: 2
   noarch: generic
   rpaths:
     - lib/R/lib/
